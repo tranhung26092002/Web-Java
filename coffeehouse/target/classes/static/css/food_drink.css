@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px;
+}
+
+/* Áp dụng cho tất cả các section.product */
+.product {
+  background-color: #f2f2f2;
+  width: 100%; /* Tự động điều chỉnh chiều rộng theo phần tử chứa nó */
+  max-width: 300px; /* Giới hạn chiều rộng tối đa của mỗi section */
+  margin: 0 auto; /* Canh giữa mỗi section */
+  text-align: center; /* Căn giữa nội dung bên trong section */
+  border: 1px solid #ddd; /* Thêm đường viền để phân chia các sản phẩm */
+  padding: 10px; /* Khoảng cách xung quanh nội dung của section */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng đổ */
+  border-radius: 5px; /* Làm tròn góc */
+  display: inline-block; /* Để các section hiển thị cạnh nhau */
+  margin-right: 10px; /* Khoảng cách giữa các section (có thể điều chỉnh) */
+  margin-bottom: 10px; /* Khoảng cách dưới của mỗi section (có thể điều chỉnh) */
+}
+
+.product h2 {
+  margin-top: 0;
+  font-size: 1.5em; /* Điều chỉnh kích thước font cho tiêu đề */
+}
+
+.product img {
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của section */
+  height: auto; /* Đảm bảo tỷ lệ khung hình */
+}
+
+.product p {
+  font-size: 1.2rem;
+}
+
+
+.product button {
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+
+aside {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+aside h2 {
+  margin-top: 0;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
